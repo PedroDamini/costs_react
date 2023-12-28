@@ -5,15 +5,28 @@ import logo from '../../img/costs_logo.png'
 
 function Navbar() {
     return (
-        <nav>
+        <nav className={styles.navbar}>
             <Container>
                 <Link>
-                    <img src={logo} alt="Costs"/>
+                    <img className={styles.nav_logo} src={logo} alt="Costs"/>
                 </Link>
-                <Link to="/">Home</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/company">Company</Link>
-                <Link to="/newproject">NewProject</Link>
+                <ul className={styles.list}>
+                    <li className={styles.item}>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to="/contact">Contato</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to="/company">Empresa</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to="/projects">Projetos</Link>
+                    </li>
+                    <li className={styles.item}>
+                        <Link to="/newproject">Novo Projeto</Link>
+                    </li>
+                </ul>
             </Container>
         </nav>
     )
