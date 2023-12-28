@@ -1,4 +1,4 @@
-import styles from './Container.modules.css'
+import styles from './Container.module.css'
 
 function Container(props) {
     return (
@@ -6,7 +6,6 @@ function Container(props) {
             {props.children} 
         </div>
     )
-    
 }
 
 export default Container
