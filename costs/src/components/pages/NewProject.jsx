@@ -18,8 +18,8 @@ function NewProject() {
             headers: {
                 'content-type': 'application/json',
             },
-        })
-            .then((resp) => resp.json())
+            body: JSON.stringify(project)
+        }).then((resp) => resp.json())
             .then((data) => {
                 console.log(data)
                 //redirect
