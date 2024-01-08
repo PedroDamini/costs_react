@@ -5,7 +5,6 @@ function Message({ type, msg }) {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        
         if(!msg) {
             setVisible(false)
             return
@@ -15,7 +14,7 @@ function Message({ type, msg }) {
 
         const timer = setTimeout(() => {
             setVisible(false)
-        }, 3000)
+        }, 10000)
 
         return () => clearTimeout(timer)
     }, [msg])

@@ -10,6 +10,50 @@
       "costs": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "name": "RedeSocial",
+      "budget": "00",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "RedeSocial",
+      "budget": "1000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "RedeSocial",
+      "budget": "1111",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "RedeSocial",
+      "budget": "0000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "categories": [
