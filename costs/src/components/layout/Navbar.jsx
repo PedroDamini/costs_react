@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <Container>
-                <Link>
+                <Link to="/">
                     <img className={styles.nav_logo} src={logo} alt="Costs"/>
                 </Link>
                 <ul className={styles.list}>
