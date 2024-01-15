@@ -54,6 +54,17 @@
       "costs": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "name": "Projeto planejamento",
+      "budget": "465",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
