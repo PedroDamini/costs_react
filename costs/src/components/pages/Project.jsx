@@ -13,11 +13,14 @@ function Project () {
             headers: {
                 'Content-Type': 'application/json',
             },
-        }).then()
-            .catch()
+        }).then((resp) => resp.json())
+            .then((data) => {
+                setProject(data)
+            })
+            .catch((err) => console.log)
     }, [id])
 
-    return <p>Projeto</p>
+    return <p>{project.name}</p>
 }
 
 export default Project;
