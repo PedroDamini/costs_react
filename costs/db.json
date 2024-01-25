@@ -12,7 +12,7 @@
       "id": 3
     },
     {
-      "name": "Projeto planejamento",
+      "name": "planejamento",
       "budget": "465",
       "category": {
         "id": "4",
@@ -23,11 +23,11 @@
       "id": 6
     },
     {
-      "name": "Projeto Teste novo",
+      "name": "Teste novo",
       "budget": "12345",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
       "costs": 0,
       "services": [],
