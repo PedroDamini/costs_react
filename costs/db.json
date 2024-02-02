@@ -23,15 +23,15 @@
       "id": 6
     },
     {
-      "name": "Teste novo ",
-      "budget": "12345",
+      "name": "Projeto teste teste",
+      "budget": "6789",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "costs": 0,
       "services": [],
-      "id": 7
+      "id": 8
     }
   ],
   "categories": [
