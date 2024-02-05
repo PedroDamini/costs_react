@@ -3,18 +3,22 @@ import { useState } from 'react';
 import Input from '../form/Input';
 import SumbitButton from '../form/SubmitButton';
 
-function ServiceForm () {
+function ServiceForm ({ handleSubmit, btnText, projectData }) {
 
-    function Submit() {
+    const [service, setService] = useState({})
 
+    function submit(e) {
+        e.preventDefault()
+        projectData.services.push(service)
+        handleSubmit(projectData)
     }
 
     function handleChange(e) {
-
+        setService({ ...service, [e.target.name]: e.target.value })
     }
 
     return (
-        <form action="">
+        <form onSubmit={submit} className={styles.form}>
             <Input 
                 type="text"
                 text="Nome do Serviço"
@@ -22,6 +26,21 @@ function ServiceForm () {
                 placeholder="Insira o nome do Serviço"
                 handleOnChange={handleChange}
             />
+            <Input 
+                type="number"
+                text="Custo do Serviço"
+                name="cost"
+                placeholder="Insira o valor do Serviço"
+                handleOnChange={handleChange}
+            />
+            <Input 
+                type="text"
+                text="descrição do Serviço"
+                name="description"
+                placeholder="Descreva o Serviço"
+                handleOnChange={handleChange}
+            />
+            <SumbitButton text={btnText}/>
         </form>
     );
 }
