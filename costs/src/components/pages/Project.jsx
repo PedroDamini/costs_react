@@ -71,19 +71,21 @@ function Project() {
 
         // maximum value validation
         if (newCost > parseFloat(project.budget)) {
+            console.log("custo maior que orçamento")
             setMessage('Orçamento ultrapassado, verifique o valor do serviço!')
             setType('error')
             project.services.pop()
             return false
         }
-
+        console.log("Certinho, custo menor que orçamento")
         // add service cost to project cost total
         project.cost = newCost
+        console.log("project")
         console.log(project)
         //update project
         fetch(`http://localhost:5000/projects/${project.id}`, {
             method: 'PATCH',
-            HEADERS: {
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(project),
@@ -91,6 +93,7 @@ function Project() {
             .then((resp) => resp.json())
             .then((data) => {
                 console.log(data)
+                console.log("data")
             })
             .catch((err) => console.log(err))
     }
