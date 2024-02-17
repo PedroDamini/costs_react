@@ -65,10 +65,10 @@ function Project () {
 
         lastService.id = uuidv4()
 
-        const lastServiceCost = Number(lastService.cost)
+        const lastServiceCost = lastService.cost
         console.log(lastService)
-        const newCost = parseFloat(project.costs) + parseFloat(lastServiceCost)
-        console.log(typeof(newCost))
+        const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+        console.log(newCost)
 
         if(newCost > parseFloat(project.budget)) {
             setMessage("Orçamento ultrapassado, verifique o valor do serviço")

@@ -32,6 +32,17 @@
       "costs": 0,
       "services": [],
       "id": 8
+    },
+    {
+      "name": "Projeto TI",
+      "budget": "2200",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 9
     }
   ],
   "categories": [
