@@ -9,7 +9,6 @@ import ServiceForm from '../service/ServiceForm';
 import ServiceCard from '../service/ServiceCard';
 import Message from '../layout/Message';
 
-
 function Project() {
     const { id } = useParams();
     const [project, setProject] = useState([]);
