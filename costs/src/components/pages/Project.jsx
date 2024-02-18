@@ -155,7 +155,12 @@ function Project() {
                     </div>
                     <h2>Serviços</h2>
                     <Container customClass="start">
-                        <p>Itens de Serviços</p>
+                    <div style={{display: 'flex', flexDirection: 'column'}}>
+                            {project.services.length > 0 &&
+                                project.services.map((service) => (
+                                    <p>{service.name}</p>
+                                ))}
+                        </div>
                     </Container>
                 </Container>
             </div>
