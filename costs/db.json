@@ -7,8 +7,21 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 240,
+      "services": [
+        {
+          "name": "Aumentar o armazenamento do banco de dados",
+          "cost": "120",
+          "description": "Site esta com muitos acessos e precisa aumentar o armazenamento do banco de dados",
+          "id": "8226d69b-edd1-4fb4-92e6-03e8fef7f495"
+        },
+        {
+          "name": "armazenamento do banco de dados",
+          "cost": "120",
+          "description": "necessario armazenamento do banco de dados",
+          "id": "a35aef30-b7a5-4e91-9f5f-03c041547012"
+        }
+      ],
       "id": 3
     },
     {
@@ -18,7 +31,7 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 2,
+      "cost": null,
       "services": [
         {
           "name": "serviço",
@@ -31,6 +44,36 @@
           "cost": "1",
           "description": "faz outra tal coisa",
           "id": "02e22ff6-03b1-4d07-98be-b664ed6181e2"
+        },
+        {
+          "name": "serviço 3",
+          "cost": "2",
+          "description": "faz outra tal coisa 2",
+          "id": "058d7cc5-59ae-4ec4-afbb-a35195a45298"
+        },
+        {
+          "name": "serviço 4",
+          "cost": "2",
+          "description": "faz isso aqui ó",
+          "id": "b9f45288-831e-4465-b4d2-cda7cc29ae30"
+        },
+        {
+          "name": "serviço",
+          "cost": "4",
+          "description": "teste",
+          "id": "00969be1-f6db-4847-bcb9-8e51b2f7ee95"
+        },
+        {
+          "name": "serviço",
+          "cost": "5",
+          "description": "teste 2",
+          "id": "e30e19b3-d6a3-451a-866e-ecf98b172c10"
+        },
+        {
+          "name": "Tal service",
+          "cost": "2",
+          "description": "o tal servico",
+          "id": "e49bb295-e253-4a36-98c9-33a86eb3e548"
         }
       ],
       "id": 6
